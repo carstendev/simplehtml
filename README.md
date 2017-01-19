@@ -8,7 +8,7 @@ Simple Java-Framework that helps you create HTML in Java.
 
 # Examples
 
-<h5>Creating simple HTML with an autoclosing HtmlBuilder</h5>
+<h5>Creating HTML with an autoclosing HtmlBuilder</h5>
 
 ```Java 
 public void main() {
@@ -17,13 +17,13 @@ public void main() {
                .body()
                    .bold()
                        .text("Simple HTML") // adds content
-                    .br()
-                    .text("Very simple");
+                   .br()
+                   .text("Very simple");
     String asString = builder.toString();
 }
 ```
 
-<h5>Creating simple HTML with a nonAutoclosing HtmlBuilder</h5>
+<h5>Creating HTML with a nonAutoclosing HtmlBuilder</h5>
 ```Java 
 public void main() {
     HtmlBuilder builder = HtmlBuilder.nonAutoClosing();
@@ -31,9 +31,9 @@ public void main() {
                .body()
                    .bold()
                        .text("Simple HTML")
-                    ._bold() // closes the bold tag
-                    .br() // never needs to be closed
-                    .text("Very simple")
+                   ._bold() // closes the bold tag
+                   .br() // never needs to be closed
+                   .text("Very simple")
                ._body()
            .html();
     String asString = builder.toString();
