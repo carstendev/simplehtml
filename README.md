@@ -23,7 +23,7 @@ public void main() {
 }
 ```
 
-<h5>Creating simple HTML with an nonAutoclosing HtmlBuilder</h5>
+<h5>Creating simple HTML with a nonAutoclosing HtmlBuilder</h5>
 ```Java 
 public void main() {
     HtmlBuilder builder = HtmlBuilder.nonAutoClosing();
