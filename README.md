@@ -35,7 +35,7 @@ public void main() {
                    .br() // never needs to be closed
                    .text("Very simple")
                ._body()
-           .html();
+           ._html();
     String asString = builder.toString();
 }
 ```
