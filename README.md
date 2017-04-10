@@ -24,6 +24,7 @@ public void main() {
 ```
 
 <h5>Creating HTML with a nonAutoclosing HtmlBuilder</h5>
+
 ```Java 
 public void main() {
     HtmlBuilder builder = HtmlBuilder.nonAutoClosing();
