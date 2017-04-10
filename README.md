@@ -16,7 +16,7 @@ public void main() {
     builder.html()
                .body()
                    .bold()
-                       .text("Simple HTML") // adds content
+                       .text("Simple HTML") // adds content and closes the bold tag automatically
                    .br()
                    .text("Very simple");
     String asString = builder.toString();
